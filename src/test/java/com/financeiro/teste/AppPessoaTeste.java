@@ -25,10 +25,7 @@ public class AppPessoaTeste extends TestCase {
 
 		Pessoa pessoa = new Pessoa("Welinton");
 		session.save(pessoa);
-		
-		Pessoa pessoa1 = new Pessoa("Rayane");
-		session.save(pessoa1);
-
+	
 		session.getTransaction().commit();
 		session.close();
 	}

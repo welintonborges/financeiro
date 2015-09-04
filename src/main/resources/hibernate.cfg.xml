@@ -4,25 +4,28 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
 
-        <!-- Connection settings -->
-        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5431/financeiro</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">admin</property>
+	<session-factory>
 
-        <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- Connection settings -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5431/financeiro</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">admin</property>
 
-        <!-- Print executed SQL to stdout -->
-        <property name="show_sql">true</property>
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
-        <!-- Drop and re-create all database on startup -->
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+		<!-- Print executed SQL to stdout -->
+		<property name="show_sql">true</property>
 
-      <!-- Annotated entity classes -->
-        <mapping class="com.financeiro.model.Pessoa"/>
-        
-    </session-factory>
+		<!-- Drop and re-create all database on startup -->
+		<property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+		<!-- Annotated entity classes -->
+		<mapping class="com.financeiro.model.Pessoa" />
+		<!-- <mapping class="com.financeiro.model.lancamento" />
+		<mapping class="com.financeiro.model.tipoLancamento" />-->
+
+	</session-factory>
 </hibernate-configuration>

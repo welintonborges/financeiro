@@ -12,7 +12,7 @@ public class CriaTabelas {
 
 			EntityManagerFactory factory = Persistence
 					.createEntityManagerFactory("financeiro-pu");
-			System.out.println("taabelar criada com sucesso !!!");
+			System.out.println("tabelar criada com sucesso !!!");
 
 			factory.close();
 		} catch (Exception e) {
