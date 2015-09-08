@@ -30,10 +30,15 @@ public class Lancamento implements Serializable {
 	public Lancamento(){
 	
 	};
-	public Lancamento(Pessoa pessoa, String descricao){
+	public Lancamento(Pessoa pessoa, String descricao, BigDecimal valor, TipoLancamento tipo, Date dataVencimento,Date dataPagamento){
 		
-		this.pessoa= pessoa;
-		this.descricao= descricao;
+		this.pessoa = pessoa;
+		this.descricao = descricao;
+		this.valor = valor;
+		this.tipo =  tipo;
+		this.dataVencimento = dataVencimento;
+		this.dataPagamento = dataPagamento;
+		
 	}
 	
 	public static final long serialVersion= 1L;
