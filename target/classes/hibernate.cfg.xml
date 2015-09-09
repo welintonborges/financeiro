@@ -24,8 +24,9 @@
 
 		<!-- Annotated entity classes -->
 		<mapping class="com.financeiro.model.Pessoa" />
-		<!-- <mapping class="com.financeiro.model.lancamento" />
-		<mapping class="com.financeiro.model.tipoLancamento" />-->
-
+		<mapping class="com.financeiro.model.OlaBean" />
+		<mapping class="com.financeiro.model.tipoLancamento" />
+		
 	</session-factory>
+
 </hibernate-configuration>

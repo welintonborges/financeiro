@@ -1,4 +1,6 @@
-com\financeiro\model\Lancamento.class
 com\financeiro\model\Pessoa.class
-com\financeiro\view\CriaTabelas.class
+com\financeiro\servlet\OiMundoServlet.class
+com\financeiro\model\Lancamento.class
+com\financeiro\model\OlaBean.class
 com\financeiro\model\TipoLancamento.class
+com\financeiro\view\CriaTabelas.class
